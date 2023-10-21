@@ -1,4 +1,4 @@
-* Estilos del header */
+/* Estilos del header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@
   
   /* Estilos del fondo */
   body {
-    background-image: url("https://media.istockphoto.com/id/484156320/es/foto/la-gran-sabana-por-salto-kae-chirimata.jpg?s=2048x2048&w=is&k=20&c=W7ZHENOTF67HfvoZvzIbQgfAjWoEH9ghTofmWooh-EI=qBrhjULDKw092971yrD&ust=1697910758923000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKDRrs-YhYIDFQAAAAAdAAAAABAJ.jpg");
+    background-color: aqua;
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
