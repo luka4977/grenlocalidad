@@ -17,7 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from cambios.views import hola
+from cambios.views import home
+from cambios.views import prueba
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',hola)
+    path('',hola),
+    path("home/", home),
+    path("entero/",prueba)
 ]
