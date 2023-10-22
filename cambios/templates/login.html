@@ -10,13 +10,13 @@
 <body>
 
     <div class="caja">
-        <form action="">
+        <form method="post" action="/validar_usuario">{% csrf_token %}
             <h1>Login</h1>
             <div class="usuario">
-                <input type="text" placeholder="Usuario" required>
+                <input type="text" placeholder="Correo" required name="email">
             </div>
             <div class="usuario">
-                <input type="password" placeholder="Contraseña" required>
+                <input type="password" placeholder="Contraseña" required name="contraseña">
             </div>
             <div class="remember-forgot">
                 <label><input type="checkbox"> Recordar </label>
