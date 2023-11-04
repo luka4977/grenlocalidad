@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Home</title>
+    <title>Mi Página Web</title>
+    <style>
+        body {
+          background-image: url("img/home.jpg");
+          background-size: cover; 
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .barra-estatica {
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .barra-estatica ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .barra-estatica li {
+            margin: 0;
+        }
+
+        .barra-estatica a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Mi Página Web</h1>
+    </header>
 
-<div class="header">
-  <a href="#default" class="logo"><img src="intro.png"></a>
-  <div>
-    <a class="active" href="#home">inicio</a>
-    <a href="#contact">votaciones</a>
-    <a href="#about">lugares sucios</a>
-    <a href="#login">log in</a>
-    <a href="#signup">sing up</a>
-  </div>
-</div>
+    <nav class="barra-estatica">
+        <ul>
+            <li><a href="#"><h3>Inicio</h3></a></li>
+            <li><a href="#"><h3>Como surgimos</h3></a></li>
+            <li><a href="#"><h3>Servicios</h3></a></li>
+            <li><a href="#">   </a></li>
+            <li><a href="#"><h3>Inicia sesion<h3></a></li>
+            <li><a href="#"><h3>Registrate</h3></a></li>
+        </ul>
+    </nav>
 
+    <main>
+        <h2>bienvenidos a Greencomunidad</h2>
+        <p>Eperamos de todo corazon que sea muy util para ustedes este proyecto y les guste.</p>
+    </main>
 </body>
 </html>
