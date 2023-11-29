@@ -7,7 +7,7 @@ from .models import Informacion
 def hola(request):
     return HttpResponse("hola")
 def home(request):
-    loco = open("cambios/templates/inicio.html")
+    loco = open("cambios/templates/home.html")
     template = Template(loco. read ())
     loco.close()
     contexto = Context ()
@@ -26,7 +26,7 @@ def error(request):
 
 #acciones
 def registro(request): #registro
-    if request.method!= "POST": return redirect("/error")
+    if request.method!= "POST": return render(request, "login.html")
     datos= dict(request.POST)
     nombre= datos["nombree"][0]
     contra= datos["contraseña"][0]

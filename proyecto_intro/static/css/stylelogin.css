@@ -9,7 +9,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url("img/image2.png") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -76,30 +75,4 @@ body{
     border: none;
     outline: none;
     border-radius: 40px;
-    transition: btn 1s linear;
-}
-
-.caja .btn:active{
-    background-color: rgb(150, 209, 63);
-}
-
-.hola {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-family: cursive, sans-serif;
-    outline: 0;
-    background: rgba(0, 97, 100, 0.9);
-    color: #fff;
-    border: 1px solid rgba(0, 97, 100, 0.9);
-    padding: 4px;
-    border-radius: 9px;
-  }
-
-.troll {
-    width: 420px;
-    position: relative;
-    background-color: rgba(0, 97, 100, 0.9);
-    color: #fff;
-    padding: 5px;
-    border-radius: 9px;
 }

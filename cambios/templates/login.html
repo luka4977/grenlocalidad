@@ -1,14 +1,22 @@
+{%load static%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greencomunidad Log-in</title>
-    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="{%static '/css/stylelogin.css'%}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body {
+          background-image: url("{%static 'img/image2.png'%}") no-repeat;
+          }
+    </style>
+
 </head>
 <body>
-
     <div class="caja">
         <form method="post" action="/validar_usuario">{% csrf_token %}
             <h1>Login</h1>
