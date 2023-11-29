@@ -1,68 +1,75 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="style-votacion.css">
+    <link rel="stylesheet" href="{% static 'css/style-votacion.css' %}">
 </head>
 <body>
     <header class="header">
         <div class="container-header">
-            <h1>Votación</h1>
+            <h1>Crear votación</h1>
         </div>
         <nav class="menu">
-            <a class="link" href="#">Inicio</a>
+            <a class="link" href="/">Inicio</a>
             <a class="link" href="#">Formularios</a>
-            <a class="link" href="#">Ayuda</a>
+            <a class="link" href="votar/">Votar</a>
         </nav>
     </header>
+
     <form action="#" method="post">
+
         <div class="forms-grupos">
-            <label><b>Radio de la zona</b></label>
-            <input type="number" name="number-label" id="edad" placeholder="Ingresa radio" required min="5" max="80">
+            <p><b>Ciudad</b></p>
+    
+            <label>
+                <input type="text" name="comment" id="ciudad" placeholder="Ciudad...">
+            </label>
+        </div>
+    
+        <div class="forms-grupos">
+            <p><b>Dirección</b></p>
+    
+            <label>
+                <input type="text" name="comment" id="direccion" placeholder="Direccion...">
+            </label>
         </div>
 
         <div class="forms-grupos">
-            <p><b>Describe la zona</b></p>
-            <label>
-                <select name="usuario-opcion" id="select">
-                    <option disabled selected value="Seleciona tu rol"></option>
-                    <option value="estudiante">Plaza</option>
-                    <option value="profesor">Playa</option>
-                    <option value="trabajador">Residencial</option>
-                    <option value="directivo">Calles</option>
-                </select>
-            </label>
+            <label><b>Radio de la zona</b></label>
+            <input type="number" name="number-label" id="edad" placeholder="Ingresa radio" required min="5" max="999">
         </div>
 
         <div class="forms-grupos">
             <p><b>¿Qué tan sucio se encuentra el lugar?</b></p>
 
             <label>
-                <input type="radio" name="opcion-user" id="definitivamente">
+                <input type="radio" name="opcion-user" id="bastante">
                 <b>Bastante</b>
             </label>
 
             <label>
-                <input type="radio" name="opcion-user" id="probablemente">
+                <input type="radio" name="opcion-user" id="mas o menos">
                 <b>Mas o menos</b>
             </label>
 
             <label>
-                <input type="radio" name="opcion-user" id="no creo">
+                <input type="radio" name="opcion-user" id="no tanto">
                 <b>No tanto</b>
             </label>
         </div>
 
         <div class="forms-grupos">
-            <p><b>Agrega imágenes</b></p>
+            <p><b>Agrega comentarios</b></p>
 
             <label>
-                <input type="text" name="comment" id="comentarios" placeholder="Agrega imágenes...">
+                <input type="text" name="comment" id="comentarios" placeholder="Agrega comentarios...">
             </label>
         </div>
 
         <div class="button">
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Crear">
         </div>
     </form>
 </body>

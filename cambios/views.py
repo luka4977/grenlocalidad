@@ -49,6 +49,8 @@ def sesion(request):
     except:
         return redirect("/error")
 
+def votacion(request):
+    return(render(request,"votacion.html"))
         
     
     
