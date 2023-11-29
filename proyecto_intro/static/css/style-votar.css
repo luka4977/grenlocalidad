@@ -36,7 +36,7 @@
 }
 
 .button{
-    
+    padding: 1rem;
     width: 500px;
 }
 
@@ -60,3 +60,19 @@ input[type="submit"]:hover{
 body{
     background-color: rgb(138, 245, 209);
 }
+
+.direccion{
+    padding: 1rem;
+}
+
+.ciudad{
+    padding: 1rem;
+}
+
+.desc{
+    padding: 1rem;
+}
+.radio{
+    padding: 1rem;
+}
+

@@ -20,7 +20,7 @@ from cambios.views import hola
 from cambios.views import home
 from cambios.views import prueba
 from cambios.views import error
-from cambios.views import registro,sesion,votar,ciudad,guardar_datos
+from cambios.views import registro,sesion,votar,ciudad,guardar_datos,completado
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',hola),
@@ -32,4 +32,5 @@ urlpatterns = [
     path("votar/",votar),
     path("ciudad/",ciudad),
     path("votacion/",guardar_datos),
+    path("completado/", completado)
 ]

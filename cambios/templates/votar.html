@@ -8,14 +8,14 @@
 </head>
 <body>
   <div class="superior">
-    {% for x in Votar %}
+    {% for x in votar %}
     <h2 class="direccion">{{x.direccion}}</h2>
     <p class="ciudad">{{x.ciudad}}</p>
     <p class="desc">{{x.descripcion}}</p>
     <p class="radio">{{x.radio}}</p>
-    <div class="button">
+    <a href="/completado/"><div class="button">
       <input type="submit" value="Si">
-    </div>
+    </div></a>
     <div class="button">
         <input type="submit" value="No">
     </div>
