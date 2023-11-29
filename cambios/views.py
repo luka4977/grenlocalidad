@@ -50,9 +50,6 @@ def sesion(request):
     except:
         return redirect("/error")
 
-def votacion(request):
-    return(render(request,"votacion.html"))
-
 def votar(request):
     votar = Votaciones.objects.all()
     return(render(request,"votar.html",{
@@ -62,4 +59,14 @@ def votar(request):
 def ciudad(request):
     return(render(request,"ciudad.html"))
     
-    
+def guardar_datos(request):
+    info = dict(request.POST)
+    ciudadd = info["Ciudad"][0]
+    direcciónn = info["Dirección"][0]
+    radioo= info["Radio de la zona"][0]
+    comentarioss= info["Comentarios"][0]
+    try:
+        info(ciudad=ciudadd, dirección=direcciónn, radio=radioo, comentario=comentarioss).save()
+    except:
+        return redirect("/error404")
+    return render(request, "votacion.html")
