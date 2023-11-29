@@ -38,6 +38,7 @@ def registro(request): #registro
         pass
     Informacion(nombre=nombre,contraseña= contra, email=email).save()
     return redirect("/home")
+
 def sesion(request):
     if request.method!= "POST": return redirect("/error")
     datos= dict(request.POST)
@@ -57,6 +58,8 @@ def votar(request):
     return(render(request,"votar.html",{
         'votar': votar ,
     }))
-        
+
+def ciudad(request):
+    return(render(request,"ciudad.html"))
     
     
