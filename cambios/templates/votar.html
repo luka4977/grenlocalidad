@@ -1,18 +1,25 @@
 {% load static %}
 
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Document</title>
-        <link rel="stylesheet" href="{% 'style-votar.css' %}">
-    </head>
-    <body>
-        <h1 class="tittle">{{tittle}}</h1>
-        {% for product in products %}
-        <h2 class="name">{{product.name}}</h2>
-        <p class="valor">{{product.price}}</p>
-        <div class="button">
-            <input type="submit" value="Votar">
-        </div>
-        {% endfor %}
-    </body>
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/style-votar.css' %}">
+</head>
+<body>
+  <div class="superior">
+    {% for x in Votar %}
+    <h2 class="direccion">{{x.direccion}}</h2>
+    <p class="ciudad">{{x.ciudad}}</p>
+    <p class="desc">{{x.descripcion}}</p>
+    <p class="radio">{{x.radio}}</p>
+    <div class="button">
+      <input type="submit" value="Si">
+    </div>
+    <div class="button">
+        <input type="submit" value="No">
+    </div>
+    {% endfor %}
+  </div>
+</body>
 </html>

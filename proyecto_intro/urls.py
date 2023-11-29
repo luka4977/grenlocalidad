@@ -20,7 +20,7 @@ from cambios.views import hola
 from cambios.views import home
 from cambios.views import prueba
 from cambios.views import error
-from cambios.views import registro,sesion,votacion
+from cambios.views import registro,sesion,votacion,votar
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',hola),
@@ -30,4 +30,5 @@ urlpatterns = [
     path("registrar",registro ),
     path("validar_usuario",sesion),
     path("votacion",votacion),
+    path("votar/",votar),
 ]

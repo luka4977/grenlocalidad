@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import Template, Context
-from .models import Informacion
+from .models import Informacion, Votaciones
 
 # Create your views here.
 def hola(request):
@@ -51,6 +51,12 @@ def sesion(request):
 
 def votacion(request):
     return(render(request,"votacion.html"))
+
+def votar(request):
+    votar = Votaciones.objects.all()
+    return(render(request,"votar.html",{
+        'votar': votar ,
+    }))
         
     
     

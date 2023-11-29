@@ -30,6 +30,15 @@
     padding: 10px;
 }
 
+.superior{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button{
+    
+    width: 500px;
+}
 
 input[type="submit"]{
     padding: 10px;
@@ -40,7 +49,7 @@ input[type="submit"]{
     color: rgb(255, 255, 255);
     font-weight: 750;
     transition: all 0.3s ease;
-    width: 800px;
+    width: 400px;
     align-items: center;
 }
 
