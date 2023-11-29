@@ -26,7 +26,7 @@ def error(request):
 
 #acciones
 def registro(request): #registro
-    if request.method!= "POST": return render(request, "login.html")
+    if request.method!= "POST": return render(request, "sign-up.html")
     datos= dict(request.POST)
     nombre= datos["nombree"][0]
     contra= datos["contraseña"][0]
